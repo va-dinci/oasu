@@ -8,6 +8,6 @@ const {
 } = require("../controllers/habitController");
 
 router.route("/").get(getHabits).post(setHabit);
-router.route("/:id").patch(updateHabit).delete(deleteHabit);
+router.route("/:id").put(updateHabit).delete(deleteHabit);
 
 module.exports = router;
